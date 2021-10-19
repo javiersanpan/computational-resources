@@ -2,6 +2,7 @@
 #include <unistd.h>
 
 int main(){
+
     // este bucle infiníto crea procesos infinitos, y como se llenan los ID
     // ya no se pueden usar los demás programas
     // while(true){
@@ -13,10 +14,11 @@ int main(){
     va a ser diferente a 0 */
 
     if(pid == 0){
-        printf("Soy el proceso hijo\n");
+        printf("Soy el proceso hijo = pid: %d\n",pid);
     } else {
-        printf("Soy el proceso padre\n");
+        printf("Soy el proceso padre = pid: %d\n",pid);
     }
     //}
+    
     return 0;
 }
