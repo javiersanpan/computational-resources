@@ -13,6 +13,6 @@ int main(){
     } else {
         printf("Soy el proceso padre = pid: %d\n",pid);
     }
-    
+
     return 0;
 }
